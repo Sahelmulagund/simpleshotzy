@@ -35,7 +35,8 @@ const data = {
   ],
 };
 
-export default function ServiceSection() {
+export default function ServiceSectio() {
+  
   const handleClick = (e)=>{
     e.preventDefault()
     setVideoOpen(true);
@@ -45,19 +46,20 @@ export default function ServiceSection() {
   return (
     <section sx={{variant:'section.services'}} id="about">
       <Container sx={styles.containerBox}>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/EJl70GkA4K4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail"/>
-          <Button
+        
+          {/* <Button
           sx={styles.videoBtn}
           onClick={handleClick}
           aria-label="Play Button">
             <span>
               <IoIosPlay/>
             </span>
-          </Button>
-        <Box sx={styles.shapeBox}>
+          </Button> */}
+        {/* <Box sx={styles.shapeBox}>
           <Image src={shapePattern} alt='shape' />
-        </Box>
+        </Box> */}
         </Box>
         <Box sx={styles.contentBox}>
           <TextFeature subTitle={data.subTitle} title={data.title}/>
@@ -79,12 +81,15 @@ export default function ServiceSection() {
         </Grid>
         </Box>
       </Container>
-      <ModalVideo
+    
+      {/* <ModalVideo
         channel="youtube"
         isOpen={videoOpen}
-        videoId="EJl70GkA4K4"
+       videoId="EJl70GkA4K4"
         onClose={()=>setVideoOpen(false)}
-      />
+       
+      /> */}
+      
     </section>
   );
 }
@@ -105,12 +110,19 @@ const styles = {
   coreFeature: {
     py: [0, null, null, 2, null, 7],
     position: 'relative',
+   
+  },
+  ifraMe:{
+    display: 'flex',
+    alignItems:'center',
+    justifyContent:'center'
   },
   containerBox: {
     display: 'flex',
     alignItems: ['flex-start', null, null, 'center'],
     justifyContent: ['flex-start', null, null, 'space-between'],
     flexDirection: ['column', null, null, 'row'],
+   
     pb: [0, null, null, null, null, 7],
    
   },
@@ -181,6 +193,7 @@ const styles = {
     width: ['100%', null, null, 315, 390, 450, null, 500],
     flexShrink: 0,
     mb: [7, null, 60, 0],
+    mt:'15px',
     textAlign: ['center', null, null, 'left'],
   },
   grid: {
@@ -209,7 +222,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'left',
-    mt: '-5px',
+    mt: '15px',
     title: {
       fontSize: 3,
       color: 'heading_secondary',
@@ -222,6 +235,7 @@ const styles = {
       fontSize: [1, null, null, '14px', 1],
       fontWeight: 400,
       lineHeight: 1.9,
+      
     },
   },
   videoWrapper: {
