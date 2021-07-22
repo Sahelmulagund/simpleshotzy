@@ -9,23 +9,23 @@ import menuItems from './header.data';
 
 const social = [
   {
-    path: '/',
+    path: 'https://www.facebook.com/SimpleShotz-106677004402607',
     icon: <FaFacebookF />,
   },
   {
-    path: '/',
+    path: 'https://twitter.com/Simpleshotz_',
     icon: <FaTwitter />,
   },
   {
-    path: '/',
+    path: 'https://www.youtube.com/channel/UCfRikOxvhtmaWl1W_Hrk2dg',
     icon: <FaYoutube />,
   },
   {
-    path: '/',
+    path: 'https://www.instagram.com/simpleshotz_/',
     icon: <FaInstagram />,
   },
   {
-    path: '/',
+    path: 'https://www.linkedin.com/in/simpleshotz-media-129417216/',
     icon: <FaLinkedinIn />,
   },
 ];
