@@ -17,6 +17,7 @@ import TestimonialCard from '../sections/testimonial';
 import Contact from 'sections/contact';
 import SocialSection from 'sections/social-section';
 
+
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
