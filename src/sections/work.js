@@ -6,12 +6,12 @@ import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn, FaMailBulk } from 'react-icons/fa';
 
-import Member1 from 'assets/youtube.png';
-import Member2 from 'assets/youtube.png';
-import Member3 from 'assets/youtube.png';
-import Member4 from 'assets/youtube.png';
-import Member5 from 'assets/youtube.png';
-import Member6 from 'assets/youtube.png';
+import Member1 from 'assets/work (1).jpg';
+import Member2 from 'assets/work2 (1) (1).png';
+import Member3 from 'assets/work3 (1).png';
+import Member4 from 'assets/work4 (1).png';
+import Member5 from 'assets/work5 (1).png';
+import Member6 from 'assets/work6 (1).png';
 import WorkCard from 'components/work-card';
 
 const data = [
